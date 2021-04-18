@@ -1,19 +1,29 @@
 $(() => {
     //Track Details
-    const index = ['1', '2', '3', '4']
+    const index = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
 
     const trackNames = [
         'Everybody Knows',
         'Hotel California',
         'Save Your Tears',
-        'Stop Children'
+        'Stop Children',
+        'Abhi Na Jao Reprise',
+        'Luka Chuppi Reprise',
+        'Retro Medley',
+        'Take Oplo Kache Dakchi',
+        'Tum Mile'
     ]
 
     const artists = [
         'Sigrid', 
         'Eagles', 
         'The Weekend', 
-        'Buffalo Springfield'
+        'Buffalo Springfield',
+        'Twin Strings',
+        'Nafisa Haniya',
+        'Twin Strings',
+        'Mahtim Sakib',
+        'Raj Barman'
     ]
 
     const trackFiles = [
@@ -21,6 +31,11 @@ $(() => {
         'library/hotel-california.mp3',
         'library/save-your-tears.mp3',
         'library/stop-children.mp3',
+        'library/abhi-na-jao-reprise.mp3',
+        'library/luka-chuppi-bohot-hui-reprise.mp3',
+        'library/retro-medley.mp3',
+        'library/take-olpo-kache-dakchi.mp3',
+        'library/tum-mile-dil-khile.mp3',
     ]
 
     //Fetching html elements
@@ -182,6 +197,7 @@ $(() => {
             audio.play()
             playerTrack.addClass('active')
             albumArt.addClass('active')
+            i.attr('class', 'bx bx-pause')
         }
 
         artistName.text(currArtist)
